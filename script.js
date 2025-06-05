@@ -13,8 +13,7 @@ const currentDate = formattedDate(date);
 document.getElementById("tarikh").innerText = currentDate;
 
 document.getElementById("discover-blog").addEventListener("click", () => {
-  window.location.href =
-    window.location.origin + "/Dev-Board-Assignment/codes/blog.html";
+  window.location.href = "./codes/blog.html";
 });
 
 function reduceTask() {
