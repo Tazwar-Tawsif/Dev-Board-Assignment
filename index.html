@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Board</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="poppins-regular bg-(--basic) min-h-screen m-0 pt-5">
+    <header class="w-[1536px] mx-auto">
+      <nav>
+        <div
+          class="navbar bg-base-100 shadow-sm rounded-lg flex justify-between p-5"
+        >
+          <div class="flex gap-2 items-center">
+            <img src="./assets/logo.png" class="size-10" />
+            <a class="text-3xl">Dev<span class="font-bold">Board</span></a>
+          </div>
+          <div class="flex flex-row gap-5 items-center">
+            <div class="flex items-center bg-(--basic) rounded-xl p-4 gap-2">
+              <img src="./assets/checkbox.png" alt="" class="mr-2" />
+              <p id="total-task-done" class="text-xl font-semibold">23</p>
+            </div>
+            <img
+              src="./assets/theme-btn.png"
+              id="change-bg-color"
+              alt=""
+              class="size-12 cursor-pointer"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="w-[1536px] mx-auto">
+      <section class="grid grid-cols-4 gap-10 mt-4 py-4">
+        <div class="col-span-3 flex flex-col bg-white rounded-lg shadow-sm">
+          <div class="grid grid-cols-4 gap-5 p-3">
+            <div class="flex gap-3 bg-(--basic) p-6 rounded-xl items-center">
+              <img
+                src="./assets/checkbox.png"
+                class="size-14 border-15 border-white rounded-3xl"
+                alt=""
+              />
+              <div class="flex flex-col items-start">
+                <p class="text-lg font-bold">Task Assigned</p>
+                <span id="task-left" class="text-xl font-bold">06</span>
+              </div>
+            </div>
+            <div
+              id="discover-blog"
+              class="rounded-xl blog-class col-span-2 flex gap-6 items-center bg-linear-(--discover) p-6 cursor-pointer"
+            >
+              <img src="./assets/board.png" alt="" />
+              <p class="text-2xl text-white font-normal">
+                Discover Something <br />New Today!
+              </p>
+            </div>
+            <div
+              id="calender"
+              class="flex gap-3 bg-(--basic) p-6 rounded-xl items-center"
+            >
+              <img
+                class="size-14 border-15 border-white rounded-3xl"
+                src="./assets/calender.png"
+                alt=""
+              />
+              <p id="tarikh" class="font-normal text-xl"></p>
+            </div>
+          </div>
+          <div id="card-box" class="grid grid-rows-2 grid-cols-3 gap-4 p-3">
+            <div
+              class="card flex flex-col justify-center p-5 rounded-lg shadow-md bg-(--basic) gap-y-1"
+            >
+              <p class="bg-white p-2 w-min">ShopEase</p>
+              <h2 class="font-semibold text-2xl">Fix Mobile Button Issue</h2>
+              <p class="bg-white p-5 text-gray-400">
+                Debug using Chrome DevTools, check for overlapping...
+              </p>
+              <div class="grid grid-cols-2 mt-3">
+                <div>
+                  <p>Deadline</p>
+                  <p>21 March 2025</p>
+                </div>
+                <button class="btn btn-primary">Completed</button>
+              </div>
+            </div>
+            <div
+              class="card flex flex-col justify-center p-5 rounded-lg shadow-md bg-(--basic) gap-y-1"
+            >
+              <p class="bg-white p-2 w-min">CloudSync</p>
+              <h2 class="font-semibold text-2xl">Add Dark Mode</h2>
+              <p class="bg-white p-5 text-gray-400">
+                Store the user's preference in localStorage, update CSS...
+              </p>
+              <div class="grid grid-cols-2 mt-3">
+                <div>
+                  <p>Deadline</p>
+                  <p>21 March 2025</p>
+                </div>
+                <button class="btn btn-primary">Completed</button>
+              </div>
+            </div>
+            <div
+              class="card flex flex-col justify-center p-5 rounded-lg shadow-md bg-(--basic) gap-y-1"
+            >
+              <p class="bg-white p-2 w-min">SwiftPay</p>
+              <h2 class="font-semibold text-2xl">Optimize Home page </h2>
+              <p class="bg-white p-5 text-gray-400">
+                Debug using Chrome DevTools, check for overlapping...
+              </p>
+              <div class="grid grid-cols-2 mt-3">
+                <div>
+                  <p>Deadline</p>
+                  <p>21 March 2025</p>
+                </div>
+                <button class="btn btn-primary">Completed</button>
+              </div>
+            </div>
+            <div
+              class="card flex flex-col justify-center p-5 rounded-lg shadow-md bg-(--basic) gap-y-1"
+            >
+              <p class="bg-white p-2 w-min">Meta</p>
+              <h2 class="font-semibold text-2xl">Add new emoji 🤲</h2>
+              <p class="bg-white p-5 text-gray-400">
+                Debug using Chrome DevTools, check for overlapping...
+              </p>
+              <div class="grid grid-cols-2 mt-3">
+                <div>
+                  <p>Deadline</p>
+                  <p>21 March 2025</p>
+                </div>
+                <button class="btn btn-primary">Completed</button>
+              </div>
+            </div>
+            <div
+              class="card flex flex-col justify-center p-5 rounded-lg shadow-md bg-(--basic) gap-y-1"
+            >
+              <p class="bg-white p-2 w-min">Google LLC</p>
+              <h2 class="font-semibold text-2xl">Integrate OpenAI API</h2>
+              <p class="bg-white p-5 text-gray-400">
+                Debug using Chrome DevTools, check for overlapping...
+              </p>
+              <div class="grid grid-cols-2 mt-3">
+                <div>
+                  <p>Deadline</p>
+                  <p>21 March 2025</p>
+                </div>
+                <button class="btn btn-primary">Completed</button>
+              </div>
+            </div>
+            <div
+              class="card flex flex-col justify-center p-5 rounded-lg shadow-md bg-(--basic) gap-y-1"
+            >
+              <p class="bg-white p-2 w-min">Glassdoar</p>
+              <h2 class="font-semibold text-2xl">Improve Job searching</h2>
+              <p class="bg-white p-5 text-gray-400">
+                Debug using Chrome DevTools, check for overlapping...
+              </p>
+              <div class="grid grid-cols-2 mt-3">
+                <div>
+                  <p>Deadline</p>
+                  <p>21 March 2025</p>
+                </div>
+                <button class="btn btn-primary">Completed</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-1 bg-white rounded-lg shadow-sm text-center p-3">
+          <div class="flex items-center justify-center gap-2 mt-5 mb-3">
+            <img src="./assets/activity.png" alt="" />
+            <p>Activity Log</p>
+          </div>
+          <button id="clear-history" class="btn btn-primary">
+            Clear History
+          </button>
+          <div id="task-history" class="mt-5"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/codes/script.js"></script>
+    <!-- <script src="./codes/blog.js"></script> -->
+  </body>
+</html>

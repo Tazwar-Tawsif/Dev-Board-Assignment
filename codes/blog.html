@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="poppins-regular bg-(--basic) min-h-screen m-0 pt-5">
+    <header class="w-[1536px] mx-auto">
+      <nav>
+        <div
+          class="navbar bg-base-100 shadow-sm rounded-lg flex justify-between p-5"
+        >
+          <div class="flex gap-2 items-center">
+            <img src="../assets/logo.png" class="size-10" />
+            <a class="text-3xl">Dev<span class="font-bold">Board</span></a>
+          </div>
+
+          <button id="back-btn" class="btn btn-primary">Back to Desk</button>
+        </div>
+      </nav>
+    </header>
+    <main class="w-[1536px] mx-auto mt-14">
+      <h2 class="text-center font-bold text-3xl">Blogs</h2>
+      <div
+        class="collapse collapse-plus bg-base-100 border border-base-300 my-10"
+      >
+        <input type="radio" name="my-accordion-3" checked="checked" />
+        <div class="collapse-title font-semibold text-2xl">
+          Question-1: What are the different ways to select an element in the
+          DOM?
+        </div>
+        <div class="collapse-content text-xl">
+          There are several ways to select an element. <br />1.
+          <strong>getElementByID()</strong> which selects an element with an
+          'id' <br />2. <strong>getElementByClassName()</strong> which selects
+          an element with a 'class' <br />3.
+          <strong>getElementByTagName()</strong> which selects an element with
+          its 'tag name' <br />4. <strong>querySelector()</strong> which is a
+          CSS selector, can be used with 'id', 'class' <br />5.
+          <strong>querySelectorAll()</strong> which selects all the elements
+          with the same 'class' name or tag name
+        </div>
+      </div>
+      <div
+        class="collapse collapse-plus bg-base-100 border border-base-300 my-10"
+      >
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title font-semibold text-2xl">
+          Question-2: What is the difference between innerHTML, innerText, and
+          textContent ?
+        </div>
+        <div class="collapse-content text-xl">
+          innerHTML gets or sets a HTML markup contained in that element whereas
+          innerText retrieves the text value inside a HTML tag. <br />
+          textContent, however retrieves all type of text values either its
+          hidden or visible
+        </div>
+      </div>
+      <div
+        class="collapse collapse-plus bg-base-100 border border-base-300 my-10"
+      >
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title font-semibold text-2xl">
+          Question-3: What is event delegation in the DOM?
+        </div>
+        <div class="collapse-content text-xl">
+          Simply it is a technique where you add one event listener to the
+          parent and events in the children can be handled with that one event
+          listener. Helpful in the case of adding/removing unknown new elements
+          in a parent. Also helps with clean coding.
+        </div>
+      </div>
+
+      <div
+        class="collapse collapse-plus bg-base-100 border border-base-300 my-10"
+      >
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title font-semibold text-2xl">
+          Question-4: What is event bubbling in the DOM?
+        </div>
+        <div class="collapse-content text-xl">
+          It is a technique related with event delegation where an event starts
+          from a target element in a child and bubbles up to the parent element
+          to respond to that particular event.
+        </div>
+      </div>
+      <div
+        class="collapse collapse-plus bg-base-100 border border-base-300 my-10"
+      >
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title font-semibold text-2xl">
+          Question-5: How do you create, add, and remove elements using
+          JavaScript?
+        </div>
+        <div class="collapse-content text-xl">
+          Lets say we want to add a paragraph in a div and remove a heading from
+          that div. <br />
+          ##Create <br />const new_paragraph = document.createElement('p');
+          new_paragraph.innerText = "hello new paragraph";<br />
+          ##Add <br />
+          document.getElementByTagName('div').appendChild(new_paragraph);<br />
+          ##Remove <br />
+          document.getElementByTagName('div').removeChild(document.getElementByID('heading'));
+        </div>
+      </div>
+    </main>
+
+    <!-- <script src="./codes/blog.js"></script> -->
+    <script src="./blog.js"></script>
+  </body>
+</html>
